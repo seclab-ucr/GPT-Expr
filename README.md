@@ -12,11 +12,14 @@ Use ChatGPT to evaluate if a function initializes parameters for each function c
 
 ![wf.jpg](wf.jpg)
 
-## Expected result
-- Our method should really find several missed bugs from previous method
-- Our method should get a better result even symbolic execution won’t timeout ( symbolic execution is still not perfect due to many reasons, such as asm code. ChatGPT is free of them); 
-- Our method should be reliable. ChatGPT is non-deterministic by design, we make techniques to mitigate it. We should show our method could always (or, in most all cases) give safe and reliable answers.
+## Result
+
+![result.jpg](result.png)
+
+
+## Future Work
+- Our method should really find several missed bugs
+- Our method should get a better result even symbolic execution won’t timeout (symbolic execution is still not perfect due to many reasons, such as asm code. ChatGPT is free of them); 
+- Our method should be more reliable. ChatGPT is non-deterministic by design, we need to mitigate it. We should show our method could always (or, most cases) give correct and reliable answers.
 - Our method should also work in other analysis. The unit in our analysis is function, so we believe many summary based inter-procedure analysis could benefit from our method.
 
-##  Future Goal
-Static analysis is sound by design, but suffers from a precision vs scalability for long time. After adding ChatGPT into the workflow of static analysis, it is promising to build efficient and effective static analyzers and build more reliable software in the future.
