@@ -7,10 +7,16 @@ We investigate where and how _Large Language Models (LLMs)_ can assist static an
 Use ChatGPT to evaluate if a function initializes parameters for each function call:
 
 - Provide necessary context, such as return value checks ( The context preparing could also finished by ChatGPT)
-- Engage in an iterative process, allowing ChatGPT to request additional information (such as function definitions)
+- Engage in an iterative process (i.e., progressive prompt), allowing ChatGPT to request additional information (such as function definitions)
 - Prompt ChatGPT to generate a structured summary after analysis
 
 ![wf.jpg](wf.jpg)
+
+
+## Demo (and Prompt)
+
+- [Complete Conversation](conversation.md)
+- [Progressive Prompt in Multiple Turns](many_round.md)
 
 ## Result
 
